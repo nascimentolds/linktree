@@ -1,0 +1,72 @@
+ @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+        body {
+            background-color: #050505; /* Preto quase absoluto */
+            color: white;
+            font-family: 'Oswald', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        /* Estilo da Imagem do Logo */
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-bottom: 30px;
+            filter: drop-shadow(0 0 10px rgba(192, 58, 53, 0.3)); 
+            border-radius: 50%; /* Nota: Se o logo for retangular, isso pode cortar as pontas */
+        }
+
+        .link-container {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            background: transparent;
+            border: 2px solid #C03A35; /* Vermelho Poetrix */
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            font-weight: bold;
+            clip-path: polygon(2% 0, 100% 0, 98% 100%, 0% 100%); /* Efeito meio "torto" */
+            
+            /* Alinhamento do Ícone com o Texto */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px; /* Espaço entre ícone e texto */
+        }
+
+        /* Efeito ao passar o mouse */
+        .btn:hover {
+            background-color: #C03A35;
+            color: #000;
+            transform: scale(1.02) skewX(-2deg);
+            box-shadow: 0 0 15px #C03A35;
+            cursor: pointer;
+        }
+        
+        /* Ajuste fino para os ícones ficarem alinhados visualmente */
+        .btn i {
+            font-size: 1.3rem;
+        }
+
+        .socials {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #888;
+        }
